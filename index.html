@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IP Address</title>
+</head>
+
+<body>
+  <div class="container flex">
+
+
+    <div class="content">
+
+      <h2>Hello,</h2><br>
+      <p>Enter Your IP Address Here,</p><br>
+     
+
+      <div class="opendiv">
+
+        ​<button class="open-button" type="submit" onclick="openForm()"> Enter IP Address </button>
+
+        <button class="stop-button" type="submit" onclick="myStop()">Stop</button>
+
+      </div>
+
+
+    </div>
+
+    <div class="result-container">
+
+      <table id="ipList" class="result-table">
+        <thead>
+          <tr>
+            <th>IP Address</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <div class="form-popup" id="myForm">
+
+      <form class="form-container">
+
+        <input type="text" class="ipinput" id="ipAddressInput" placeholder="Enter Your Ip Address" required
+          pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+
+        <input type="text" class="ipinput" id="domainNameInput" placeholder="Enter Domain Name (optional)">
+
+        <button type="button" class="btn" onclick="storeIpAddress()">Save IP Address</button>
+
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+      </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

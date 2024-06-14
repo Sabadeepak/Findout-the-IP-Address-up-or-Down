@@ -1,0 +1,144 @@
+* {
+
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 1200px;
+  background-color: #ccbdbc;
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-bottom: 500px;
+  position: absolute;
+
+}
+
+.opendiv {
+  margin-top: 20px;
+  margin-left: 27px;
+  position: fixed;
+}
+
+.result-container {
+  margin-top: 00px;
+  margin-left: 90%;
+}
+
+.result-table {
+  margin-top: 10px
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: whitesmoke;
+}
+
+
+.content h2 {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 45px
+}
+
+.content p {
+
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.open-button {
+  background: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.stop-button {
+  background: #7e1717;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(165, 133, 133);
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 320px;
+  left: 60px;
+  border: 3px solid #f1f1f1;
+}
+
+.form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #000066;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: rgb(221, 208, 208);
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
